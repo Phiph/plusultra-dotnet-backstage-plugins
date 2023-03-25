@@ -1,7 +1,7 @@
 import { InputError } from "@backstage/errors";
 import { ScmIntegrationRegistry } from "@backstage/integration";
 import { spawn } from 'child_process';
-
+import { executeShellCommand } from '@backstage/plugin-scaffolder-backend';
 import { createTemplateAction } from '@backstage/plugin-scaffolder-node';
 
 export const dotnetNugetAddAction = (options: {
